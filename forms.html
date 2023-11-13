@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Basics Assignment 3</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Form Basics Assignment 3">
+    <meta name="author" content="Jeunice Mwakisha">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <!--Basic User Information Form-->
+    <h1>Basic User Information Form</h1>
+    <form required>
+        <section>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="1" required>
+        </section>
+        <section>
+            <!--Task 4 - Input Types -->
+            <h4>Additional Information:</h4>
+
+            <label for="phone">Phone Number:</label>
+            <input type="number" id="phone" name="phone" min="0" pattern="[0-9]{10}" placeholder="Enter 10-digit phone number"
+                required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!--User's country dropdown menu-->
+            <label for="country">Country of Residence</label>
+            <select id="country" name="country" required>
+                <option value="kenya">Kenya</option>
+                <option value="kenya">Tanzania</option>
+                <option value="uganda">Uganda</option>
+                <option value="ghana">Ghana</option>
+                <option value="nigeria">Nigeria</option>
+            </select>
+        </section>
+        <br>
+        <section >
+            <!-- User's Interest Form-->
+            <label>Gender:</label>
+            <label for="male">Male
+                <input type="radio" id="male" name="gender" value="male">
+            </label>
+
+            <label for="female">Female
+                <input type="radio" id="female" name="gender" value="female">
+            </label>
+
+            <!--Hobbies Checkboxes-->
+            <h4>Hobbies:</h4>
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="sports" name="hobbies" value="sports">
+
+            <label for="reading">Travel</label>
+            <input type="checkbox" id="travel" name="hobbies" value="travel">
+
+            <label for="reading">Music</label>
+            <input type="checkbox" id="music" name="hobbies" value="music">
+
+            <label for="reading">Swimming</label>
+            <input type="checkbox" id="swimming" name="hobbies" value="swimming">
+        </section>
+        <section>
+
+            <!--Text Area for comments/feedback-->
+            <label for="comments">Comments/Feedback:</label>
+            <textarea id="comments" rows="4" cols="50"></textarea>
+
+            <button type="submit">Submit</button>
+        </section>
+
+    </form>
+
+</body>
+
+</html>
